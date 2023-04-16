@@ -1,7 +1,0 @@
-c:\Users\a.abdybayev\Desktop\repos\projects\Bank\Bank\obj\Debug\net7.0\Bank.csproj.AssemblyReference.cache
-c:\Users\a.abdybayev\Desktop\repos\projects\Bank\Bank\obj\Debug\net7.0\Bank.GeneratedMSBuildEditorConfig.editorconfig
-c:\Users\a.abdybayev\Desktop\repos\projects\Bank\Bank\obj\Debug\net7.0\Bank.AssemblyInfoInputs.cache
-c:\Users\a.abdybayev\Desktop\repos\projects\Bank\Bank\obj\Debug\net7.0\Bank.AssemblyInfo.cs
-c:\Users\a.abdybayev\Desktop\repos\projects\Bank\Bank\obj\Debug\net7.0\Bank.csproj.CoreCompileInputs.cache
-c:\Users\a.abdybayev\Desktop\repos\projects\Bank\Bank\obj\Debug\net7.0\Bank.MvcApplicationPartsAssemblyInfo.cs
-c:\Users\a.abdybayev\Desktop\repos\projects\Bank\Bank\obj\Debug\net7.0\Bank.MvcApplicationPartsAssemblyInfo.cache
