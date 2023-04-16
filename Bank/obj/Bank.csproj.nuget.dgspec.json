@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\a.abdybayev\\Desktop\\repos\\projects\\Bank\\Bank\\Bank.csproj": {}
+    "c:\\Users\\a.abdybayev\\Desktop\\repos\\projects\\Bank\\Bank\\Bank.csproj": {}
   },
   "projects": {
-    "C:\\Users\\a.abdybayev\\Desktop\\repos\\projects\\Bank\\Bank\\Bank.csproj": {
+    "c:\\Users\\a.abdybayev\\Desktop\\repos\\projects\\Bank\\Bank\\Bank.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\a.abdybayev\\Desktop\\repos\\projects\\Bank\\Bank\\Bank.csproj",
+        "projectUniqueName": "c:\\Users\\a.abdybayev\\Desktop\\repos\\projects\\Bank\\Bank\\Bank.csproj",
         "projectName": "Bank",
-        "projectPath": "C:\\Users\\a.abdybayev\\Desktop\\repos\\projects\\Bank\\Bank\\Bank.csproj",
+        "projectPath": "c:\\Users\\a.abdybayev\\Desktop\\repos\\projects\\Bank\\Bank\\Bank.csproj",
         "packagesPath": "C:\\Users\\a.abdybayev\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\a.abdybayev\\Desktop\\repos\\projects\\Bank\\Bank\\obj\\",
+        "outputPath": "c:\\Users\\a.abdybayev\\Desktop\\repos\\projects\\Bank\\Bank\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\a.abdybayev\\AppData\\Roaming\\NuGet\\NuGet.Config",

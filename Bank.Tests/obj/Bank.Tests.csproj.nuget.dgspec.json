@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\a.abdybayev\\Desktop\\repos\\projects\\Bank\\Bank.Tests\\Bank.Tests.csproj": {}
+    "c:\\Users\\a.abdybayev\\Desktop\\repos\\projects\\Bank\\Bank.Tests\\Bank.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\a.abdybayev\\Desktop\\repos\\projects\\Bank\\Bank.Tests\\Bank.Tests.csproj": {
+    "c:\\Users\\a.abdybayev\\Desktop\\repos\\projects\\Bank\\Bank.Tests\\Bank.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\a.abdybayev\\Desktop\\repos\\projects\\Bank\\Bank.Tests\\Bank.Tests.csproj",
+        "projectUniqueName": "c:\\Users\\a.abdybayev\\Desktop\\repos\\projects\\Bank\\Bank.Tests\\Bank.Tests.csproj",
         "projectName": "Bank.Tests",
-        "projectPath": "C:\\Users\\a.abdybayev\\Desktop\\repos\\projects\\Bank\\Bank.Tests\\Bank.Tests.csproj",
+        "projectPath": "c:\\Users\\a.abdybayev\\Desktop\\repos\\projects\\Bank\\Bank.Tests\\Bank.Tests.csproj",
         "packagesPath": "C:\\Users\\a.abdybayev\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\a.abdybayev\\Desktop\\repos\\projects\\Bank\\Bank.Tests\\obj\\",
+        "outputPath": "c:\\Users\\a.abdybayev\\Desktop\\repos\\projects\\Bank\\Bank.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\a.abdybayev\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,7 +28,11 @@
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "c:\\Users\\a.abdybayev\\Desktop\\repos\\projects\\Bank\\Bank\\Bank.csproj": {
+                "projectPath": "c:\\Users\\a.abdybayev\\Desktop\\repos\\projects\\Bank\\Bank\\Bank.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -74,6 +78,75 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "c:\\Users\\a.abdybayev\\Desktop\\repos\\projects\\Bank\\Bank\\Bank.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "c:\\Users\\a.abdybayev\\Desktop\\repos\\projects\\Bank\\Bank\\Bank.csproj",
+        "projectName": "Bank",
+        "projectPath": "c:\\Users\\a.abdybayev\\Desktop\\repos\\projects\\Bank\\Bank\\Bank.csproj",
+        "packagesPath": "C:\\Users\\a.abdybayev\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\a.abdybayev\\Desktop\\repos\\projects\\Bank\\Bank\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\a.abdybayev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://gitlab.jusaninvest.kz/api/v4/projects/71/packages/nuget/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
