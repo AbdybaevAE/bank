@@ -12,8 +12,8 @@ namespace Bank.Domain.Aggregates
     {
         public string ExternalId { get; }
         private readonly AccountState _state = new();
-        private readonly IList<IEvent> _allEvents = new List<IEvent>();
-        private readonly IList<IEvent> _uncommitedEvents = new List<IEvent>();
+        private readonly List<IEvent> _allEvents = new List<IEvent>();
+        private readonly List<IEvent> _uncommitedEvents = new List<IEvent>();
         public AccountAggregate(string ExternalId)
         {
             this.ExternalId = ExternalId;
@@ -52,7 +52,7 @@ namespace Bank.Domain.Aggregates
         {
             _state.Balance += evnt.Amount;
         }
-        public IList<IEvent> GetEvents()
+        public List<IEvent> GetEvents()
         {
             return _allEvents;
         }

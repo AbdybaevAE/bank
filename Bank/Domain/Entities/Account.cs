@@ -9,7 +9,6 @@ namespace Bank.Domain.Entities
     {
         public Guid id;
         public string ExternalId { get; set; }
-
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public List<Transaction> transactions;
