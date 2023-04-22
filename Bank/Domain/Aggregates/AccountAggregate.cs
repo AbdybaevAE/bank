@@ -1,5 +1,5 @@
-using Bank.Domain.Event;
 using Bank.Domain.Exceptions;
+using Bank.EventStore.Models.Event;
 
 namespace Bank.Domain.Aggregates
 {
@@ -12,8 +12,8 @@ namespace Bank.Domain.Aggregates
     {
         public string ExternalId { get; }
         private readonly AccountState _state = new();
-        private readonly List<IEvent> _allEvents = new List<IEvent>();
-        private readonly List<IEvent> _uncommitedEvents = new List<IEvent>();
+        private readonly List<IEvent> _allEvents = new();
+        private readonly List<IEvent> _uncommitedEvents = new();
         public AccountAggregate(string ExternalId)
         {
             this.ExternalId = ExternalId;

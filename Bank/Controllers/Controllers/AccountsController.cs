@@ -8,10 +8,10 @@ namespace Bank.Controllers
     [Route("accounts")]
     public class AccountsController : ControllerBase
     {
-        private readonly IAccountService accountService;
+        private readonly IAccountService _accountService;
         public AccountsController(IAccountService accountService)
         {
-            this.accountService = accountService;
+            this._accountService = accountService;
         }
         [HttpPost]
         public ActionResult<int> CreateAccount([FromBody] CreateAccountRequestBody requestBody)

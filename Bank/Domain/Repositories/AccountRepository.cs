@@ -1,11 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Bank.Domain.Aggregates;
-using Bank.Domain.Entities;
-using Bank.Domain.Event;
 using Bank.Domain.Exceptions;
+using Bank.EventStore.Models.Event;
 
 namespace Bank.Domain.Repositories
 {
