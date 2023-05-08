@@ -5,14 +5,14 @@ namespace Bank.EventStore
 {
     public class PostgresDbContext : DbContext
     {
-        protected readonly IConfiguration _configuration;
+        protected readonly IConfiguration Configuration;
         public PostgresDbContext(IConfiguration configuration)
         {
-            _configuration = configuration;
+            Configuration = configuration;
         }
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
-            var connectionString = _configuration.GetSection("EventStore").GetValue<string>("ConnectionString");
+            var connectionString = Configuration.GetSection("EventStore").GetValue<string>("ConnectionString");
             options.UseNpgsql(connectionString);
         }
         public DbSet<Event> Events { get; set; }

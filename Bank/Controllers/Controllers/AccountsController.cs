@@ -19,5 +19,10 @@ namespace Bank.Controllers
             Console.WriteLine(requestBody.ToString());
             return 1;
         }
+        [HttpGet]
+        public ActionResult<int> GetAccounts()
+        {
+            return 1;
+        }
     }
 }

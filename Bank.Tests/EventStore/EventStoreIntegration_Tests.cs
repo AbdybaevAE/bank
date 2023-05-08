@@ -1,30 +1,39 @@
-using System;
 using Bank.EventStore;
 using Bank.EventStore.Models.Event;
-using Bank.Tests.Lib;
-using Bank.Tests.Lib.Categories;
+using Bank.Tests.LibTest;
 using Microsoft.Extensions.Configuration;
+using Xunit.Abstractions;
 
 namespace Bank.Tests.EventStore
 {
-    public class EventStoreIntegration_Tests : PostgresContainer
+    [Collection("Persistence collection")]
+    public class EventStoreIntegration_Tests : IDisposable
     {
-        private IEventStore eventStore;
-        public EventStoreIntegration_Tests() : base("Resources/create_event_store_relations.sql") { }
-        protected override void OnContainerUp()
+        private readonly IEventStore _eventStore;
+        private readonly ITestOutputHelper _output;
+        private readonly PersistenceFixture _persistenceFixture;
+        public EventStoreIntegration_Tests(PersistenceFixture persistenceFixture, ITestOutputHelper output)
         {
+            _output = output;
+            _persistenceFixture = persistenceFixture;
+            _persistenceFixture.SeedData();
             var settings = new Dictionary<string, string>() {
-                {"EventStore:ConnectionString", CurrentContainer.GetConnectionString()}
+                {"EventStore:ConnectionString", _persistenceFixture.Container.GetConnectionString()}
             };
+#pragma warning disable CS8620
             var configuration = new ConfigurationBuilder().AddInMemoryCollection(settings).Build();
             var dbContext = new PostgresDbContext(configuration);
-            eventStore = new PostgresEventStore(dbContext);
+            _eventStore = new PostgresEventStore(dbContext);
         }
 
-        [Category(TestCategory.Integration)]
+        public void Dispose()
+        {
+            _persistenceFixture.ClearData();
+        }
         [Fact]
         public void ShouldPersistEventsCorrectly_Test()
         {
+            // Given
             var events = new List<Event>(){
                 new Event{
                     Id = Guid.NewGuid(),
@@ -33,7 +42,10 @@ namespace Bank.Tests.EventStore
                     Payload = "Some payload"
                 }
             };
-            eventStore.Save(events);
+
+            // When
+            _eventStore.Save(events);
+
         }
     }
 }
